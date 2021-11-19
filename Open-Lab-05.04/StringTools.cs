@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Text.RegularExpressions;
 
 namespace Open_Lab_05._04
 {
@@ -6,7 +7,7 @@ namespace Open_Lab_05._04
     {
         public string RemoveSpecialCharacters(string original)
         {
-            throw new NotImplementedException();
+          return  Regex.Replace(original, @"[^0-9a-zA-Z-_ ]+", "");
         }
     }
 }
